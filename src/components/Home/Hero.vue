@@ -5,7 +5,7 @@
         <v-container ma-0 pa-0>
           <v-col class="text-left" cols="12">
             <h1 class="display-4 font-weight-bold mb-4">👋 Hi, I'm Zedzee!</h1>
-            <p class="text--secondary"></p>
+            <p class="subheader" style="margin-left:9rem">Welcome to my home.</p>
           </v-col>
         </v-container>
       </v-row>

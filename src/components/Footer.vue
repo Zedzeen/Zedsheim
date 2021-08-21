@@ -1,3 +1,4 @@
+<!-- NOTE: Can't use the vue router (:to="link") on the buttons, 'cause it break's the navbar by not updating the "v-if"s -->
 <template>
   <v-footer color="transparent lighten-1" padless>
     <v-row justify="center" no-gutters>
@@ -9,7 +10,7 @@
         text
         rounded
         class="my-2"
-        :to="link"
+        :href="link"
       >
         {{ link }}
       </v-btn>
@@ -22,6 +23,7 @@
       >
         CDN
       </v-btn>
+      <v-btn color="white" text rounded class="my-2" href="https://github.com/zedzeen"> Github </v-btn>
       <v-col class="transparent py-4 text-center white--text" cols="12">
         {{ new Date().getFullYear() }} — <strong>Zedzee</strong>
       </v-col>
@@ -34,7 +36,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   data: () => ({
-    links: ["Projects", "Write-ups", "Blog"],
+    links: ["projects", "write-ups", "blog"],
   }),
 });
 </script>

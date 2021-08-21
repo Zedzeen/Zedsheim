@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main style="transform: translateY(-64px);">
+    <v-main style="transform: translateY(-64px)">
       <transition name="fade">
         <router-view />
       </transition>
@@ -34,14 +34,15 @@ html {
   scroll-behavior: smooth;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
 
-.container{
+.container {
   max-width: 1400px;
 }
 </style>
